@@ -108,18 +108,18 @@ nav ul li a:hover::after {
 
   background-color: #e7e8d1;
 }
-.second-nav {
-  position: relative;
-  /* top: 90%; */
-  /* left: 50%; */
 
+.second-nav-container {
+  transform: translate(-20%, -50%);
   padding: 20px 0;
   z-index: 2;
-  /* text-align: center; */
 }
 
 .second-nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .second-nav ul li {
@@ -130,7 +130,7 @@ nav ul li a:hover::after {
 .second-nav ul li a {
   position: relative;
   text-decoration: none;
-  color: #B85042;
+  color: #b85042;
   padding: 0.3rem 10px;
   font-size: 1.1rem;
   padding-bottom: 1rem;
@@ -149,18 +149,22 @@ nav ul li a:hover::after {
 
 .second-nav ul li a:hover::after {
   width: 100%;
-
-  background-color: #e7e8d1;
+  background-color: #b85042;
 }
 
 /* Slider styles */
+/* CSS for adjusting the position of slider arrows and dots */
+.bx-wrapper .bx-controls {
+  display: none;
+}
+
 .slider {
-  margin-top: 20px; /* Adjust spacing between second nav and slider */
+  margin-top: 20px;
   text-align: center;
 }
 
 .bxslider {
-  width: 80%; /* Adjust the width of the slider */
+  width: 20%; /* Adjust the width of the slider */
   margin: 0 auto; /* Center the slider horizontally */
 }
 
@@ -169,8 +173,13 @@ nav ul li a:hover::after {
 }
 
 .bxslider li img {
-  max-width: 100%; /* Set maximum width for images */
-  height: auto;
+  text-align: center;
+  margin-left: 34.3rem;
+
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  object-fit: scale-down;
 }
 
 .bxslider li p {
@@ -246,7 +255,6 @@ nav ul li a:hover::after {
   opacity: 0;
   backface-visibility: hidden;
 }
-
 
 /* Slider styles */
 .slider {

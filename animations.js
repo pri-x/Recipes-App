@@ -13,7 +13,7 @@ $(document).ready(function () {
     },
   });
   $(".bxslider").bxSlider({
-    auto: true, // Set to true for auto sliding
+    auto: true, 
     mode: "fade", // Set the sliding effect
     // You can add more options as needed
   });
