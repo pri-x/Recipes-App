@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   $(".ex1").textyle();
 
   $(".ex2").textyle({
@@ -12,5 +11,10 @@ $(document).ready(function () {
         transition: "4s",
       });
     },
+  });
+  $(".bxslider").bxSlider({
+    auto: true, // Set to true for auto sliding
+    mode: "fade", // Set the sliding effect
+    // You can add more options as needed
   });
 });
