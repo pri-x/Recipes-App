@@ -152,8 +152,6 @@ nav ul li a:hover::after {
   background-color: #b85042;
 }
 
-/* Slider styles */
-/* CSS for adjusting the position of slider arrows and dots */
 .bx-wrapper .bx-controls {
   display: none;
 }
@@ -164,21 +162,22 @@ nav ul li a:hover::after {
 }
 
 .bxslider {
-  width: 20%; /* Adjust the width of the slider */
-  margin: 0 auto; /* Center the slider horizontally */
+  width: 20%;
+  margin: 0 auto;
 }
 
 .bxslider li {
   list-style: none;
+  position: relative;
 }
 
 .bxslider li img {
+  object-fit: contain;
   text-align: center;
-  margin-left: 34.3rem;
-
-  height: 500px;
-  width: 400px;
-  border-radius: 20px;
+  margin-left: 31rem;
+  height: 800px;
+  width: 500px;
+  border-radius: 5px;
   object-fit: scale-down;
 }
 
@@ -203,6 +202,24 @@ nav ul li a:hover::after {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  margin-left: 31rem;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  transform: translateY(65%);
+  transition: transform 0.5s ease;
+}
+
+.description.active {
+  transform: translateY(0);
 }
 
 #explore-button:hover {
@@ -348,4 +365,22 @@ nav ul li a:hover::after {
   left: -10px;
   opacity: 0;
   backface-visibility: hidden;
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(69,
+  78, 89, .9);
+  color: white;
+  
+  flex-grow: 1;
+}
+
+footer > div {
+  /* padding-left: 10%; */
 }

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //Header Text Animation 
   $(".ex1").textyle();
 
   $(".ex2").textyle({
@@ -12,9 +13,27 @@ $(document).ready(function () {
       });
     },
   });
+  // Image auto Slide Animation
   $(".bxslider").bxSlider({
-    auto: true, 
-    mode: "fade", // Set the sliding effect
-    // You can add more options as needed
+    auto: true,
+    mode: "fade",
   });
+
+  //Recipe Description hover Animation
+  $(".bxslider").hover(
+    function () {
+      $(this).find(".description").css("transform", "translateY(20%)");
+    },
+    function () {
+      $(this).find(".description").css("transform", "translateY(70%)");
+    }
+  );
+  $(".bxslider").hover(
+    function () {
+      $(this).find(".description").addClass("active");
+    },
+    function () {
+      $(this).find(".description").removeClass("active");
+    }
+  );
 });
