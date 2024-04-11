@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flavour Fusion</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jquery.flipster.css">
+    <link rel="stylesheet" href="css/flipster.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="
+https://cdn.jsdelivr.net/npm/jquery.flipster@1.1.6/dist/jquery.flipster.min.css
+" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,8 +27,8 @@
                     <ul>
                         <li><a href="home.html">Home</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="recipe.html">Recipe</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="Search/search.html">Recipe</a></li>
+                        <li><a href="contact/contact.html">Contact</a></li>
 
                     </ul>
                 </nav>
@@ -49,38 +51,69 @@
         </div>
         </header>
 
-        <div class="slider">
-            <ul class="bxslider">
-                <li>
-                    <div class="image-container">
-                        <img class="img1" src="images/Spaghetti alla Carbonara..jpg" alt="Spaghetti alla Carbonara">
-                        <div class="description">
-                            <p>Spaghetti alla Carbonara</p>
-                            <p>Creamy egg and cheese sauce with pancetta over spaghetti.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="image-container">
-                        <img class="img2" src="images/Torta Pasqualina.jpg" alt="Torta Pasqualina">
-                        <div class="description">
-                            <p>Torta Pasqualina</p>
-                            <p>Easter savory pie with eggs, ricotta, and vegetables.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="image-container">
-                        <img class="img3" src="images/Spaghetti and Meatballs.jpg" alt="Spaghetti and Meatballs">
-                        <div class="description">
-                            <p>Spaghetti and Meatballs</p>
-                            <p>Classic Italian-American dish with pasta, tomato sauce, and meatballs.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+
+        <!-- popular recipe section -->
+        <div id="Main-Content">
+            <div class="Container">
+
+                <div class="flipster">
+                    <ul>
+                        <li>
+                            <img src="images/Spaghetti alla Carbonara..jpg">
+                        </li>
+                        <li>
+                            <img src="images/Spaghetti and Meatballs.jpg">
+                        </li>
+                        <li>
+                            <img src="images/Spaghetti alla Carbonara..jpg">
+                        </li>
+                        <li>
+                            <img src="images/Spaghetti and Meatballs.jpg">
+                        </li>
+                        <li>
+                            <img src="images/Torta Pasqualina.jpg">
+                        </li>
+                        <li>
+                            <img src="images/Spaghetti and Meatballs.jpg">
+                        </li>
+                        <li>
+                            <img src="images/Torta Pasqualina.jpg">
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
         </div>
 
+        <!-- category -->
+        <section class="category-container">
+            <div class="category-title">
+                <h2>Categories </h2>
+                <a href="#"  class="category-btn">View All Category</a>
+                </div>
+                <div class="category-cards">
+                <a href="#" class="cat-card">
+                    <img src="images/breakfast.png" alt="">
+                    <h3>BreakFast</h3>
+                </a>
+                <a href="#" class="cat-card">
+                    <img src="images/lunch.png" alt="">
+                    <h3>Lunch</h3>
+                </a>
+                <a href="#" class="cat-card">
+                    <img src="images/dinner.png" alt="">
+                    <h3>Dinner</h3>
+                </a>
+                <a href="#" class="cat-card">
+                    <img src="images/dessert.png" alt="">
+                    <h3>Dessert</h3>
+                </a>
+          
+            </div>
+        </section>
+
+<!-- Another hero section -->
 
 
 
@@ -88,16 +121,28 @@
     <footer>
         <div class="footer">
 
+            <h3>quick links</h3>
+
+
             <p id="copyright">&copy; 2024 Flavour Fusion. All rights reserved.</p>
         </div>
 
 
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="javascript/jquery.flipster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js"></script>
+    <!-- <link rel="stylesheet" href="demo.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.flipster/1.1.6/jquery.flipster.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/jquery.flipster@1.1.6/dist/jquery.flipster.min.js
+"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-    <script src="textyle.min.js"></script>
-    <script src="animations.js"></script>
+
+    <script src="javascript/textyle.min.js"></script>
+    <script src="javascript/animations.js"></script>
 </body>
 
 </html>
